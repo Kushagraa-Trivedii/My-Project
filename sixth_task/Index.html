@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FDFH</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+.cont{
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 200%;
+  height: 520px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cont:hover .image {
+  opacity: 0.3;
+}
+
+.cont:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  font-family: cursive;
+  border-radius: 20px;
+  background-color: lightgoldenrodyellow;
+  color: red;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head> 
+<body>
+	
+<div class="row" style="margin:0px;padding-top: 0px;background-color: black"> 
+  <div class="col-lg-12 col-sm-12" style="height: 60px;">
+      <div class="col-lg-6 col-sm-6" style="margin-top: 10px;">
+        <b style="padding-left: 40px;"><img src="images\logo3.jpg" style="height: 45px;width: 45px;border: 3px; border-radius: 10px; "></b>
+      </div>
+      
+      <div class="col-lg-6 col-sm-6" style="font-size: 20px;font-family: cursive;text-align: center;margin-top: 15px;">
+
+        <b style="margin-left: 50px;color: skyblue;"> 
+          <span type="button" data-toggle="modal" data-target="#mydonate">
+             Donate
+          </span>
+        </b>
+
+        <b style="margin-left: 50px;color: skyblue;">
+          <span type="button" data-toggle="modal" data-target="">
+              Help
+          </span>
+        </b>
+
+        <b style="margin-left: 50px;color: skyblue;"> 
+          <a href="cont.html">Contact</a>
+        </b>
+
+       <b style="margin-left: 50px;color: skyblue;">
+          <a href="about1.html">About Us</a>
+       </b>
+
+        <b style="margin-left: 50px;">
+            <button type="button" data-toggle="modal" data-target="#myModal" style="border: 2px;border-radius: 50px;color: red;background-color: black;">LOGIN</button>
+        </b>
+
+      </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="myModal" role="dialog" style="padding-top: 30px;opacity: .7px">
+  <br>
+  <br>
+  <br>
+   <div class="modal-dialog">
+    <!--Sign Modal content-->
+    <div class="row" style="margin-left: 0px;margin-right: 0px">
+   	  <div class="col-lg-1 col-sm-1"></div>
+      	<div class="col-lg-10 col-sm-10" style="height: 350px; opacity: .7;border: 2px solid orange;border-radius: 500px;background-color: silver;">
+        <div style="text-align: center;padding-top: 10px;font-size: 25px;font-family: cursive;color: #FFD700;">
+          <b>LOGIN</b>
+        </div>
+        <div style="text-align: center;padding-top: 20px;font-size: 22px"><i><input type="text" name="" placeholder="Username" style="border: 1px solid black; border-radius: 15px;padding-left: 10px;font-family: cursive;color: red"></i></div>
+        <div style="text-align: center;padding-top: 20px;font-size: 22px"><input type="Password" name="" placeholder="Password" style="border: 1px solid black; border-radius: 15px; padding-left: 10px;font-family: cursive;color: red"></div>
+        <div style="text-align: center;padding-top: 20px;font-size: 15px"><input type="button" name="" value="Login" style="border-radius: 50px; background-color: red;font-family: cursive;color: gold"></div>
+
+        <div style="text-align: center;padding-top:20px;">
+      
+      <div style="padding-left: 15px;height: 30px;width: 50%;font-size:15px; color: white"><b><i>if not register&nbsp&nbsp<span data-toggle="modal" data-target="#myModal_signup" href="#" style="color: red;">SIGNUP&nbsp&nbsp</span>here&nbsp</i></b>
+      </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-sm-3"></div> 
+
+
+          <div class="col-lg-2 col-sm-2" style="margin-top: 15px">
+            <a href="https://www.google.com/search?q=fb&oq=fb&aqs=chrome..69i57j69i59l2j69i60l5.355j0j7&sourceid=chrome&ie=UTF-8"><img src="images\fb1.png" height="30px" width="80%" style="border:1px;border-radius: 80%"></a>
+          </div>
+          <div class="col-lg-2 col-sm-2" style="margin-top: 15px">
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyDMsS05XYDRgdGDwYi8pzywpSS0CAFnOB00&q=twitter&oq=tw&aqs=chrome.1.69i57j46i67i131i199i433i465j69i59j0i20i131i263i433i512j0i67i131i433l2j46i199i433i465i512j0i131i433i512j46i433i512.1813j0j7&sourceid=chrome&ie=UTF-8"><img src="images\twitter1.png" height="30px" width="80%"  style="border:1px;border-radius: 50%"></a>
+          </div>
+          <div class="col-lg-2 col-sm-2" style="margin-top: 15px">
+            <a href="https://www.google.com/search?q=instagram&oq=ins&aqs=chrome.0.69i59l2j69i57j69i59j0i67l2j69i61l2.1257j0j7&sourceid=chrome&ie=UTF-8"><img src="images\insta1.png" height="30px" width="80%" style="border:1px;border-radius: 50%"></a>
+          </div>
+
+          <div class="col-lg-3 col-sm-3"></div>
+        </div>
+        </div>
+        </div>
+    </div>
+   </div>
+</div>
+
+<div class="modal fade" id="myModal_signup" role="dialog" style="padding-top: 30px;">
+    <div class="modal-dialog">
+    <!-- reg content-->    
+      <div class="row" style="margin-left: 0px;margin-right: 0px">
+    <div class="col-lg-3 col-sm-2"></div>
+    <div class="col-lg-6 col-sm-6" style="width: 100%;border: 2px solid gold ;border-radius: 20px;margin-top: 40px;background-color: grey;height: 370px">
+      
+      <div class="col-lg-12 col-sm-12" style="text-align: center;padding-top: 10px;"><span style="font-size: 30px;font-family: cursive">REGISTRATION FORM</span></div>
+      
+      <div class="row" style="">
+        <div class="col-lg-2 col-sm-2 name" style=" text-align: center; font-family: cursive; font-size: 17px;color: orange;padding-top: 20px;">FIRST_NAME:</div>
+        <div class="col-lg-10 col-sm-10" style=";padding-top: 20px"> <input type="text" placeholder="Enter firt name" name="" style="border: 1px solid red;border-radius: 10px; height: 30px;width: 75%;padding-left: 5px;margin-left: 30px;font-family: cursive;color: red;font-size: 18px"> </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-lg-2 col-sm-2" style="text-align: center; font-family: cursive; font-size: 17px;color: orange"><b>LAST_NAME:</b></div>
+        <div class="col-lg-10 col-sm-10"> <input type="text" placeholder="Enter last name" name="" style="border: 1px solid red;border-radius: 10px; height: 30px;width: 75%;padding-left: 5px;margin-left: 30px;font-family: cursive;color: red;font-size: 18px"> </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-lg-2 col-sm-2" style="text-align: center; font-family: cursive; font-size: 17px;color: orange"><b>EMAIL:</b></div>
+        <div class="col-lg-10 col-sm-10"> <input type="text" placeholder="Email" name="" style="border: 1px solid red;border-radius: 10px; height: 30px;width: 75%;padding-left: 5px;margin-left: 30px;font-family: cursive;color: red;font-size: 18px"> </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-lg-2 col-sm-2" style="text-align: center; font-family: cursive; font-size: 17px;color: orange"><b>MOB:</b></div>
+        <div class="col-lg-10 col-sm-10"> <input type="text" placeholder="Mobile no" name="" style="border: 1px solid red;border-radius: 10px; height: 30px;width: 75%;padding-left: 5px;margin-left: 30px;font-family: cursive;color: red;font-size: 18px"> </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-lg-2 col-sm-2" style="text-align: center; font-family: cursive; font-size: 17px;color: orange"><b>PASSWORD:</b></div>
+        <div class="col-lg-10 col-sm-10"> <input type="Password" placeholder="Password" name="" style="border: 1px solid red;border-radius: 10px; height: 30px;width: 75%;padding-left: 5px;margin-left: 30px;font-family: cursive;color: red;font-size: 18px"> </div>
+      </div>
+
+
+      <div class="row" style="margin-top: 20px;text-align: center;">
+        <div class="col-lg-12 col-sm-12" style=""><input type="Button" value="Submit" style="border: 1px solid grey;border-radius: 10px;font-family: cursive;color: red;background-color: gold">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="modal fade" id="D_modal" role="dialog" style="padding-top: 30px;opacity: .7px;">
+	<div class="modal-dialog">
+	<!--donar contant-->
+
+	<div class="row" style="margin-left: 0px;margin-right: 0px;width: 600px;">
+   	  <div class="col-lg-1 col-sm-1"></div>
+      	<div class="col-lg-10 col-sm-10" style="height: 350px; opacity: .7;border: 2px solid orange;border-radius: 500px;background-color: silver;">
+        <div style="text-align: center;padding-top: 10px;font-size: 25px;font-family: cursive;color: #FFD700;">
+          <b>LOGIN</b>
+        </div>
+        <div style="text-align: center;padding-top: 20px;font-size: 22px"><i><input type="text" name="" placeholder="Username" style="border: 1px solid black; border-radius: 15px;padding-left: 10px;font-family: cursive;color: red"></i></div>
+        <div style="text-align: center;padding-top: 20px;font-size: 22px"><input type="Password" name="" placeholder="Password" style="border: 1px solid black; border-radius: 15px; padding-left: 10px;font-family: cursive;color: red"></div>
+        <div style="text-align: center;padding-top: 20px;font-size: 20px"><input type="button" name="" value="Login" style="border-radius: 50px; background-color: red;font-family: cursive;color: gold"></div>
+
+        <div style="text-align: center;padding-top:20px;">
+      <div style="padding-left: 15px;height: 30px;width: 50%;font-size:15px; color: white"><b><i>if not register&nbsp&nbsp<span data-toggle="modal" data-target="#D_Modal_signup" href="#" style="color: red;">SIGNUP&nbsp&nbsp</span>here&nbsp</i></b>
+      </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-sm-3"></div> 
+
+          <div class="col-lg-2 col-sm-12" style="margin-top: 15px">
+            <img src="images\fb_2.png" height="30px" width="80%" style="border:1px;border-radius: 80%">
+          </div>
+          <div class="col-lg-2 col-sm-12" style="margin-top: 15px">
+            <img src="images\tw5.png" height="30px" width="80%"  style="border:1px;border-radius: 50%">
+          </div>
+          <div class="col-lg-2 col-sm-12" style="margin-top: 15px">
+            <img src="images\ggp6.png" height="30px" width="80%" style="border:1px;border-radius: 50%">
+          </div>
+
+          <div class="col-lg-3 col-sm-3"></div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="modal fade" id="D_Modal_signup" role="dialog" style="padding-top: 30px;">
+    <div class="modal-dialog">  
+    <!-- reg content-->    
+      <div class="row" style="margin-left: 0px;margin-right: 0px;">
+    <div class="col-lg-3 col-sm-3"></div>
+    <div class="col-lg-6 col-sm-6" style="width: 100%;border: 2px solid gold ;border-radius: 20px;margin-top: 40px;background-color: grey;height: 370px">
+      
+      <div class="col-lg-12 col-sm-12" style="text-align: center;"><span style="font-size: 30px;font-family: cursive;">REGISTRATION FORM</span></div>
+      
+      <div class="row" style="margin-top: 20px">
+        <div class="col-lg-2 col-sm-2" style="text-align: center; font-family: cursive; font-size: 17px;color: orange"><b>FIRST_NAME:</b></div>
+        <div class="col-lg-10 col-sm-10"> <input type="text" placeholder="Enter firt name" name="" style="border: 1px solid red;border-radius: 10px; height: 30px;width: 75%;padding-left: 5px;margin-left: 30px;font-family: cursive;color: red;font-size: 18px"> </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-lg-2 col-sm-2" style="text-align: center; font-family: cursive; font-size: 17px;color: orange"><b>LAST_NAME:</b></div>
+        <div class="col-lg-10 col-sm-10"> <input type="text" placeholder="Enter last name" name="" style="border: 1px solid red;border-radius: 10px; height: 30px;width: 75%;padding-left: 5px;margin-left: 30px;font-family: cursive;color: red;font-size: 18px"> </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-lg-2 col-sm-2" style="text-align: center; font-family: cursive; font-size: 17px;color: orange"><b>EMAIL:</b></div>
+        <div class="col-lg-10 col-sm-10"> <input type="text" placeholder="Email" name="" style="border: 1px solid red;border-radius: 10px; height: 30px;width: 75%;padding-left: 5px;margin-left: 30px;font-family: cursive;color: red;font-size: 18px"> </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-lg-2 col-sm-2" style="text-align: center; font-family: cursive; font-size: 17px;color: orange"><b>MOB:</b></div>
+        <div class="col-lg-10 col-sm-10"> <input type="text" placeholder="Mobile no" name="" style="border: 1px solid red;border-radius: 10px; height: 30px;width: 75%;padding-left: 5px;margin-left: 30px;font-family: cursive;color: red;font-size: 18px"> </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px">
+        <div class="col-lg-2 col-sm-2" style="text-align: center; font-family: cursive; font-size: 17px;color: orange"><b>PASSWORD:</b></div>
+        <div class="col-lg-10 col-sm-10"> <input type="Password" placeholder="Password" name="" style="border: 1px solid red;border-radius: 10px; height: 30px;width: 75%;padding-left: 5px;margin-left: 30px;font-family: cursive;color: red;font-size: 18px"> </div>
+      </div>
+
+
+      <div class="row" style="margin-top: 30px;text-align: center;">
+        <div class="col-lg-12 col-sm-12" style=""><input type="Button" value="Submit" style="border: 1px solid grey;border-radius: 10px;font-family: cursive;color: red;background-color: gold">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- this is slider code and grey color-->
+
+<div class="row" style="background-color: grey;margin-left: 0px;margin-right: 0px;height: 575px;">
+
+<div class="container-fluid">
+          <div class="row" style="margin-top: 10px;">
+             <div class="col-md-12 col-sm-12">
+              <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                 <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li> 
+                 </ol>
+                 <div class="carousel-inner">
+                    <div class="item active">
+                       <img src="images\spl2.jpg" style="height:555px;width:100%;">
+                    </div>
+                    <div class="item">
+                       <img src="images\spl1.jpg" style="height:555px;width:100%;">
+                    </div>
+                    <div class="item">
+                       <img src="images\spl4.jpg" style="height:555px;width:100%;">
+                    </div>
+                <a class="carousel-control left carousel-control-prev" href="#mycarousel" data-slide="prev"></a>
+                <a class="carousel-control right carousel-control-next" href="#mycarousel" data-slide="next">
+                  <i class="fa fa-angle-right"></i>               
+                </a>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+</div>
+
+<div class="row"  style="background-color: darkgrey;margin-left: 0px;margin-right: 0px;">
+	<div class="row" style="margin-left: 0px;margin-right: 0px">
+		<div class="col-lg-12 col-sm-12" style="height: 150px;background-color:">
+			<p style="color: purple;font-family: cursive;font-size: 30px;margin-top: 40px">Food Donations and there Places:</p>
+		</div>
+	</div>
+	<div class="container-fluid" style="border: 1px ; border-radius: 25px;margin-top: ;background-color: ">
+		<div class="row" style="box-shadow: 2px 4px 3px 5px rgba(0,0,0,0.6);margin: 10px;border-color:lightblue;color: black;margin-left: 0px;margin-right: 0px;border: 1px ; border-radius: 10px;">
+			<!--<div class="carousel slide" data-ride="carousel">-->
+				<!--wrepper for slides-->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="row" style="background-color: ;border-radius: 10px;text-align: center;">
+					<div class="col-lg-2 col-sm-2" style="height: ; background-color:;">
+						<img src="images\ind9.png" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px ">
+						<span ><b style="font-family: cursive;font-size: 20px;">LANGAR SEVA SOCIETY</b> <br> <p style="font-size: 17px;margin-right: 20px;margin-left: 20px;font-family: cursive;">Delhi</p></span>
+					</div>
+					<div class="col-lg-2 col-sm-2" style="height: ;background-color: ;">
+						<img src="images\ind8.png" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px ">
+						<span ><b style="font-family: cursive;font-size: 20px;margin-left: 30px;">AIRBT</b> <br> <p style="font-size: 17px;margin-left: 20px;font-family: cursive;">Uttar-Pradesh</p></span>
+					</div>
+					<div class="col-lg-2 col-sm-2 "style="height: ;background-color:;">
+						<img src="images\ind12.png" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px ">
+						<span ><b style="font-family: cursive;font-size: 20px">HI,FI</b> <br> <p style="font-size: 17px;font-family: cursive;">Jharkhand</p></span>
+					</div>
+					<div class="col-lg-2 col-sm-2" style="height: ;background-color:">
+						<img src="images\ind11.png" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px ">
+						<span ><b style="font-family: cursive;font-size: 20px;text-align: center;text-align: center">FOOD BANK</b> <br> <p style="font-size: 17px;margin-left: 20px;font-family: cursive;">Chennai</p></span>
+					</div>
+					<div class="col-lg-2 col-sm-2" style="height: ;background-color:">
+						<img src="images\ind5.png" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px ">
+						<span ><b style="font-family: cursive;font-size: 20px;text-align: center;text-align: center">FFLV</b> <br> <p style="font-size: 17px;margin-left: 20px;font-family: cursive;">Vrindavan,UP</p></span>
+					</div>
+					<div class="col-lg-2 col-sm-2 "style="height: ;background-color">
+						<img src="images\ind10.png" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px">
+						<span ><b style="font-family: cursive;font-size: 20px;text-align: center;text-align: center">RISE AGAINST HUNGER</b> <br> <p style="font-size: 17px;margin-left: px;font-family: cursive;">Benguluru</p></span>
+					</div>
+						</div>
+					</div>
+				
+					
+	            </div>
+	        <!--</div>-->
+	    </div>
+	</div> 
+					<div class="row" style=";margin-right: 0px;margin-left: 0px;text-align: center;height: 75px;margin-top: 20px;">
+            <br>
+	                  	<div class="col-lg-12 col-sm-12" style="height:;">
+	                  		<button type="button"  style="width: 100px">
+	                  			<i style="color: brown;background-color: ;font-family: cursive;font-size: 20px;border: 1px; border-radius: 50px"><a href="regis.html">MORE</a></i>
+	                  		</button>
+	                  	</div>
+					</div>
+
+</div>
+	
+
+
+
+<div class="row">
+    <div class="col-lg-12 col-sm-12">
+      <div class="col-lg-6 col-sm-6" style="height: 520px;background-color: grey;">
+        <div class="cont">
+            <img src="images\ab.png" alt="Avatar" class="image" style="">
+             <div class="middle">
+                 <div class="text">Gallery</div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-6" style="height: 520px;background-color: ">
+        <b>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.815921873904!2d80.32223781500727!3d26.39713408335229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c47b833921381%3A0x1f9d3e033029ff3b!2sWater%20Park%2C%20Awas%20Vikas!5e0!3m2!1sen!2sin!4v1643665681717!5m2!1sen!2sin" height="520" style="border:0; width: 745px;" allowfullscreen="" loading="lazy"></iframe>
+        </b>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--This is next slide code color is grey-->
+
+<div class="row" style="background-color: lightgrey;margin-left: 0px;margin-right: 0px;">
+
+	<div class="row" style="margin-left: 0px;margin-right: 0px">
+		<div class="col-lg-12 col-sm-12" style="height: 150px;background-color: ;text-align: center;">
+			<span style="font-family: cursive;font-size: 30px;color: purple"><h1>TOP VOLUNTEER'S</h1></span>
+			<span style="font-family: cursive;font-size: 20px"><p>Food processors are encouraged to donate foods<br> that may not meet their specifications for reasons that do not affect food safety.</p></span>
+		</div>
+	</div>
+	<div class="container-fluid" style="border: 1px ; border-radius: 25px;margin-top: 20px;background-color: ">
+		<div class="row" style="box-shadow: 2px 4px 3px 5px rgba(0,0,0,0.6);margin: 10px;border-color:lightblue;color: black;margin-left: 0px;margin-right: 0px;border: 1px ; border-radius: 10px;">
+			<div class="carousel slide" data-ride="carousel">
+				<!--wrepper for slides-->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="row" style="background-color: ;border-radius: 10px;text-align: center;">
+					<div class="col-lg-2 col-sm-2" style="height: ; background-color:;">
+						<img src="images\x1.jpg" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px ">
+						<span ><b style="font-family: cursive;font-size: 20px;">Ryan Reynold And Blake Lively</b></span>
+					</div>
+					<div class="col-lg-2 col-sm-2" style="height: ;background-color: ;">
+						<img src="images\x2.jpg" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px ">
+						<span ><b style="font-family: cursive;font-size: 20px;">Jennifer Lopez</b></span>
+					</div>
+					<div class="col-lg-2 col-sm-2 "style="height: ;background-color:;">
+						<img src="images\x3.jpg" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px ">
+						<span ><b style="font-family: cursive;font-size: 20px;">Michael Jordan</b></span>
+					</div>
+					<div class="col-lg-2 col-sm-2" style="height: ;background-color:">
+						<img src="images\x4.jpg" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px ">
+						<span ><b style="font-family: cursive;font-size: 20px;">Brad and Kim Paisley</b></span>
+					</div>
+					<div class="col-lg-2 col-sm-2" style="height: ;background-color:">
+						<img src="images\x5.jpg" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px ">
+						<span ><b style="font-family: cursive;font-size: 20px;">Colin Kaepernick</b></span>
+					</div>
+					<div class="col-lg-2 col-sm-2 "style="height: ;background-color">
+						<img src="images\x6.jpg" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px">
+						<span ><b style="font-family: cursive;font-size: 20px;">Sonu Sood</b></span>
+					</div>
+						</div>
+					</div>
+				
+					<div class="item">
+						<div class="row" style="background-color: ;border-radius: 10px;text-align: center;">
+					<div class="col-lg-2 col-sm-2" style="height: ; background-color: ;">
+						<img src="images\x7.jpg" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius:10px;height: 260px;width: 200px">
+						<span ><b style="font-family: cursive;font-size: 20px;">Dwayne Johnson</b></span>
+					</div>
+					<div class="col-lg-2 col-sm-2" style="height: ;background-color: ;">
+						<img src="images\x8.jpg" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px">
+						<span ><b style="font-family: cursive;font-size: 20px;">Black Eyed Peas</b></span>
+					</div>
+					<div class="col-lg-2 col-sm-2 "style="height: ;background-color: ;">
+						<img src="images\x9.jpg" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px">
+						<span ><b style="font-family: cursive;font-size: 20px;">Tyler Perry</b></span>
+					</div>
+					<div class="col-lg-2 col-sm-2" style="height: ;background-color: ">
+						<img src="images\x10.jpg" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px">
+						<span ><b style="font-family: cursive;font-size: 20px;">Lin-Manuel Miranda</b></span>
+					</div>
+					<div class="col-lg-2 col-sm-2" style="height: ;background-color:">
+						<img src="images\x11.jpg" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px">
+						<span ><b style="font-family: cursive;font-size: 20px;">Arnold Schwarzenegger</b></span>
+					</div>
+					<div class="col-lg-2 col-sm-2 "style="height: ;background-color: ">
+						<img src="images\x12.jpg" style=" margin-left: 0px;margin-right: 0px;border: 3px solid grey; border-radius: 10px;height: 260px;width: 200px">
+						<span ><b style="font-family: cursive;font-size: 20px;">Kanye West</b></span>
+					</div>
+						</div>
+	                 </div>
+	            </div>
+	        </div>
+	    </div>
+	</div> 
+					<div class="row" style="margin-top: 10px;margin-right: 0px;margin-left: 0px;text-align: center;margin-top: 30px;height:75px">
+
+	                  	<div class="col-lg-12 col-sm-12" style="margin-top: ;">
+	                  		<button type="button" data-toggle="modal" data-target="">
+	                  			<i style="color: brown;background-color: ;font-family: cursive;font-size: 20px;border: 1px; border-radius: 50px"><a href="explore.html">EXPLORE ALL</a></i>
+	                  		</button>
+	                  	</div>
+					</div>
+</div>
+
+<div class="row" style="padding-left: 0px;margin-left: 0px;padding-right: 0px">
+
+		<div class="col-lg-4 col-sm-4" style=" height:450px; background-color: black; font-size: 20px; color: white;">
+         <b style="font-size: 30px;color: white;font-family: cursive;">ABOUT US</b>
+		 <div class="row">
+			<div class="col-lg-4 col-sm-4">
+				 <hr style="height:2px;border-width:0;color:red;background-color:red">
+			</div>
+			<div class="col-lg-8 col-sm-8">
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-lg-12" style="margin-left: 8px;font-family: cursive;">
+					<b>'Food Donation For Humanity' is a free public webiste where anyone can donate food to the needy people, they can find here the place where the food donations are going in daily purpose, they can also get information here about the other NGO's who donates food for the poor and needy people.</b>
+					
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-sm-12" style="margin-top: 50px;margin-left: 8px;">
+					<i class="fa fa-facebook-official fa-2x"></i>
+					<i class="fa fa-twitter-square fa-2x" style="margin-left: 30px;"></i>
+					<i class="fa fa-instagram fa-2x" style="margin-left: 30px;"></i>
+					<i class="fa fa-youtube-play fa-2x" style="margin-left: 30px;"></i>
+					
+				</div>
+			</div>
+			
+		 </div>	
+		</div>
+		
+	<div class="col-lg-4 col-sm-4" style=" height:450px; background-color: black; font-size: 20px; color: white; ">
+         <b style="font-size: 30px;color: white;font-family: cursive;font-family: cursive;">ADDRESS</b>
+		 <div class="row">
+			<div class="col-lg-4 col-sm-4">
+				 <hr style="height:2px;border-width:0;color:red;background-color:red">
+			</div>
+			<div class="col-lg-8 col-sm-8">
+			</div>
+		</div>
+			<div class="row">
+				<div class="col-sm-12 col-lg-12" style="margin-left: 8px">
+					<i class="fa fa-map-marker fa-2x" style="font-size: 30px;"> Kanpur, Uttar Pradesh</i><br>
+					<i class="fa fa-phone fa-2x" style="font-size: 30px; margin-top: 30px;">+91----------</i>
+					<i class="fa fa-envelope-o fa-2x" style="font-size: 30px; margin-top: 30px;">kushagratrivedi0203718@gmail.com</i><br>
+		    </div>
+      </div>
+            <div class="row" >
+            	<div class="col-lg-12 col-sm-12"style=" margin-top:130px;font-size: 20
+              px;">
+            		<b>created By <span style="color: red;font-family: cursive;">Kushagra</span>|</b>
+            		<i class="fa fa-copyright">2022 All rights reserved</i>
+            	</div>
+            </div>
+    </div>
+
+		<div class="col-lg-4 col-sm-4" style=" height:450px; background-color: black; font-size: 20px; color: white;font-family: cursive;">
+         <b style="font-size: 30px;color: white;">CONTACT US</b>
+		 <div class="row" style="padding-left: 0px;margin-left: 0px;padding-right: 0px">
+			<div class="col-lg-4 col-sm-4">
+				 <hr style="height:2px;border-width:0;color:red;background-color:red">
+			</div>
+			<div class="col-lg-8 col-sm-8">
+			</div>
+			<div class="row" style="padding-left: 0px;margin-left: 0px;padding-right: 0px">
+				<div class="col-sm-12 col-lg-12" style="margin-left: 8px;">
+	                Email*<br>
+	                <input type="text" name="" style="font-size: 25px;color: brown;font-family: cursive;width: 85%">
+	          	</div>
+		
+		
+	        </div>
+	        <div class="row" style="padding-left: 0px;margin-left: 0px;padding-right: 0px;">
+				      <div class="col-sm-12 col-lg-12" style="margin-left: 8px; margin-top: ;">
+	                Message*<br>
+	                <input type="text" name="" style="font-size: 25px;color: brown;font-family: cursive;width: 85%">
+	          	</div>
+	        </div>
+	        <div class="row" style="padding-left: 0px;margin-left: 0px;padding-right: 0px">
+				<div class="col-sm-12 col-lg-12" style="margin-left: 8px; margin-top: 30px;">
+	                <input type="button" name="send" value="send" style="width : 85%; background-color:  red;">
+	          	</div>
+	        </div>
+	        
+        </div>
+       </div>
+      </div>
+</body>
+</html>
